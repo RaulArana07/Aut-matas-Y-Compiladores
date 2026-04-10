@@ -5,11 +5,11 @@
 
 %%
 
-[A-Za-z][A-Za-z0-9_]*    { printf("ID=%s\n", yytext); }
+[0-9]+"."[0-9]+    { printf("DECIMAL=%s\n", yytext); }
 
-[ \t\n]   ;
+[ \t\n]            ;
 
-.         ;
+.                  ;
 
 %%
 
